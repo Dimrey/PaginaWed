@@ -1,0 +1,122 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Tipo de fuente y familia para el cuerpo de la página */
+    background-color: #60e093; /* Color de fondo */
+    margin: 0; /* Elimina el margen por defecto del cuerpo de la página */
+    padding: 0; /* Elimina el relleno por defecto del cuerpo de la página */
+}
+
+/* Estilos para el contenedor principal de la página */
+.container {
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Margen exterior y centrado horizontal */
+    padding: 20px; /* Relleno interno del contenedor */
+    background-color: #ffffff; /* Color de fondo del contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(41, 21, 218, 0.1); /* Sombra para resaltar el contenedor */
+}
+
+/* Estilos para el encabezado principal */
+h1 {
+    color: #333333; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: #d0f3d0; /* Color de fondo del formulario */
+    padding: 20px; /* Relleno interno del formulario */
+    border-radius: 12px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
+}
+
+/* Estilos para el formulario y disposición de columnas */
+form {
+    display: flex; /* Display flexible para disposición de columnas */
+    flex-direction: column; /* Columnas apiladas verticalmente */
+}
+
+/* Estilos para etiquetas de formulario y ajustes de separación */
+label {
+    margin-top: 5px;
+    margin-bottom: 5px; /* Margen inferior para separar del campo siguiente */
+    color: #333333; /* Color del texto de la etiqueta */
+}
+
+/* Estilos para campos de entrada y selección en el formulario */
+input,
+select {
+    margin-top: 15px;
+    padding: 5px; /* Relleno interno del campo */
+    margin-bottom: 5px; /* Margen inferior para separar del campo siguiente */
+    border: 1px solid #cccccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Ajuste específico para el margen del campo "Efficiency" */
+input[name="efficiency"] {
+    margin-top: 5px;
+    margin-bottom: 5px; /* Margen inferior mayor para este campo específico */
+}
+
+/* Ajuste específico para el margen del campo "Velocity (spm)" */
+input[name="velocity"] {
+    margin-top: 5px;
+    margin-bottom: 5px; /* Margen inferior mayor para este campo específico */
+}
+/* Estilos para el botón de envío */
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 10px; /* Relleno interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+    margin-top: 10px; /* Margen superior para separar del contenido superior */
+}
+
+/* Contenedor adicional para centrar el botón */
+.button-container {
+    display: flex; /* Display flexible para centrar el botón */
+    justify-content: center; /* Alineación del contenido al centro */
+}
+
+/* Estilos para el efecto hover del botón */
+button:hover {
+    background-color: #0056b3; /* Cambio de color de fondo al pasar sobre el botón */
+}
+
+/* Estilos para el contenedor de resultados */
+.result-container {
+    background-color: #d4eaab; /* Color de fondo del contenedor de resultados */
+    padding: 20px; /* Relleno interno del contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior para separar del contenido superior */
+}
+
+/* Estilos para listas no ordenadas y elementos de la lista */
+ul {
+    list-style: none; /* Elimina los marcadores de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+/* Estilos para elementos de la lista */
+li {
+    margin-top: 5px;
+    margin-bottom: 8px; /* Margen inferior para separar del elemento siguiente */
+    color: #333333; /* Color del texto del elemento de la lista */
+}
+
+/* Estilos para mensajes de error */
+.error {
+    color: #ff0000; /* Color del texto de error */
+    font-weight: bold; /* Texto en negrita para resaltar errores */
+}
+/* Estilos para el texto de crédito */
+.credit-text {
+    font-size: 10px; /* Tamaño de fuente más pequeño, ajusta según sea necesario */
+    color: #666666; /* Cambia el color del texto si lo deseas */
+    text-align: right; /* Alinea el texto al centro */
+    margin-top: 10px; /* Agrega un margen superior para separar del contenido superior */
+}

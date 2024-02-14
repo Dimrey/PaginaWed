@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Theoretical Displacement Calculator - Results</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Theoretical Displacement Calculator - Results</h1>
+
+        {% if result.error %}
+            <p class="error">{{ result.error }}</p>
+        {% else %}
+            <h2>Resultados:</h2>
+            <p>Datos de entrada:</p>
+            <ul>
+                <li>Plunger diameter: {{ datos.Plunger }} in</li>
+                <li>Stroke: {{ datos.Stroke }} in</li>
+                <li>Velocity: {{ datos.SPM }} spm</li>
+                <li>Efficiency: {{ datos.Eficiency * 100 }}%</li>
+            </ul>
+            <p>Displacement ({{ datos.Eficiency * 100 }}% Efficiency ): {{ result.displacement_efficiency }}</p>
+            <p>Displacement (100% Efficiency): {{ result.displacement_100_efficiency }}</p>
+
+            <!-- Botón para volver a la página principal -->
+            <form action="/redirect" method="get">
+                <button type="submit">Calculate again</button>
+            </form>
+        {% endif %}
+    </div>
+</body>
+</html>
